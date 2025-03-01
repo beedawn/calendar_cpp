@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/beeschmersal/CLionProjects/calendar/cmake-build-debug",
-		"source" : "/Users/beeschmersal/CLionProjects/calendar"
+		"build" : "/Users/beeschmersal/CLionProjects/calendar_cpp/cmake-build-debug",
+		"source" : "/Users/beeschmersal/CLionProjects/calendar_cpp"
 	},
 	"version" : 
 	{

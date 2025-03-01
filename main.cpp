@@ -9,7 +9,7 @@ int login() {
 
 
 
-    cout << "Hello and welcome to the calendar app!\n";
+    cout << "Hello and welcome to the calendar_cpp app!\n";
     string username, password;
     cout << "Please enter your user name:\n";
     cin >> username;

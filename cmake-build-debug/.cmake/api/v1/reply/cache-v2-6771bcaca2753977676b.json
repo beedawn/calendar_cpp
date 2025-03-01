@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/beeschmersal/CLionProjects/calendar/cmake-build-debug"
+			"value" : "/Users/beeschmersal/CLionProjects/calendar_cpp/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/beeschmersal/CLionProjects/calendar/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/beeschmersal/CLionProjects/calendar_cpp/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -539,7 +539,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/beeschmersal/CLionProjects/calendar"
+			"value" : "/Users/beeschmersal/CLionProjects/calendar_cpp"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -1127,7 +1127,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/beeschmersal/CLionProjects/calendar/cmake-build-debug"
+			"value" : "/Users/beeschmersal/CLionProjects/calendar_cpp/cmake-build-debug"
 		},
 		{
 			"name" : "calendar_IS_TOP_LEVEL",
@@ -1151,7 +1151,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/beeschmersal/CLionProjects/calendar"
+			"value" : "/Users/beeschmersal/CLionProjects/calendar_cpp"
 		}
 	],
 	"kind" : "cache",
