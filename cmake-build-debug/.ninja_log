@@ -1,0 +1,17 @@
+# ninja log v6
+2	353	1740784467296757079	CMakeFiles/calendar.dir/main.cpp.o	72ee1a62dd8c313b
+282	311	1740784566696490665	calendar	91dc0fd66f2a9224
+3	44	1740784934249595462	build.ninja	d0e078d6ab2764cf
+2	223	1740784467296971370	CMakeFiles/calendar.dir/calendar/calendar.cpp.o	a96b0771c82b3d92
+3	282	1740784566417246758	CMakeFiles/calendar.dir/CalendarManager/CalendarManager.cpp.o	d79bf3cde2128799
+5	240	1740785085078548294	CMakeFiles/calendar.dir/Resource/Resource.cpp.o	66b5abfacdf8b617
+5	241	1740785085078659543	CMakeFiles/calendar.dir/User/User.cpp.o	21d2f006978479b7
+4	310	1740785085077997880	CMakeFiles/calendar.dir/CalendarManager/CalendarManager.cpp.o	d79bf3cde2128799
+4	311	1740785085078395878	CMakeFiles/calendar.dir/Event/Event.cpp.o	85df4c4eb76d2833
+311	342	1740785085384608551	calendar	43b43360e647a78e
+4	397	1740786360007668005	CMakeFiles/calendar.dir/CalendarManager/CalendarManager.cpp.o	d79bf3cde2128799
+397	423	1740786360400479811	calendar	43b43360e647a78e
+4	403	1740786849763645526	CMakeFiles/calendar.dir/CalendarManager/CalendarManager.cpp.o	d79bf3cde2128799
+403	430	1740786850162957860	calendar	43b43360e647a78e
+4	434	1740787418585601330	CMakeFiles/calendar.dir/CalendarManager/CalendarManager.cpp.o	d79bf3cde2128799
+434	461	1740787419015339983	calendar	43b43360e647a78e
