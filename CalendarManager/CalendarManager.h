@@ -10,11 +10,12 @@
 #include "../Event/Event.h"
 #include <vector>
 class CalendarManager {
-    using TimePoint = std::chrono::time_point<std::chrono::seconds>;
+    using TimePoint = std::chrono::time_point<std::chrono::system_clock>;
 public:
     int id = 0;
     std::vector<Calendar> calendars;
     std::vector<Resource> resources;
+    std::vector<Calendar> readCalendars();
     Calendar newCalendar();
     Calendar deleteCalendar(const Calendar& c);
     Resource newResource();
@@ -22,9 +23,10 @@ public:
     Event newEvent(TimePoint start, TimePoint end, Calendar& c, Resource r);
     Event deleteEvent(Event e, Calendar& c);
 private:
-    bool eventOverlap(TimePoint start, TimePoint end, TimePoint start2, TimePoint end2);
+    static bool eventOverlap(TimePoint start, TimePoint end, TimePoint start2, TimePoint end2);
     bool conflictCheck(TimePoint start, TimePoint end, Resource r);
-    bool validateTimes(TimePoint start, TimePoint end);
+
+    static bool validateTimes(TimePoint start, TimePoint end);
 };
 
 

@@ -1,14 +1,14 @@
 #include <iostream>
+#include "CalendarManager/CalendarManager.h"
+#include "Resource/Resource.h"
 #include "Calendar/Calendar.h"
-
 using namespace std;
 
 
 int login() {
 
-    Calendar calendar;
 
-    cout <<calendar.id<<"\n";
+
     cout << "Hello and welcome to the calendar app!\n";
     string username, password;
     cout << "Please enter your user name:\n";
@@ -19,9 +19,21 @@ int login() {
     if (username != "test" && password != "test") {
         cout << "You entered an invalid username or password.\n";
         return 1;
-    } else {
-        return 0;
     }
+    CalendarManager cm;
+    Calendar c = cm.newCalendar();
+    Calendar x = cm.newCalendar();
+    Calendar y = cm.newCalendar();
+    const Resource r = cm.newResource();
+    auto now = std::chrono::system_clock::now();
+    auto later = now + std::chrono::seconds(1);
+
+    cm.newEvent(now, later, c, r);
+    for (const auto& calendar : cm.readCalendars()) {
+
+        cout << calendar.id << "\n";
+    }
+    return 0;
 }
 
 
