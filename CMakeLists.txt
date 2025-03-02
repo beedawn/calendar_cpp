@@ -10,6 +10,13 @@ find_package(Catch2 3 REQUIRED)
 add_executable(tests tests/test.cpp)
 target_link_libraries(tests PRIVATE Catch2::Catch2WithMain)
 
+
+add_executable(test_CalendarManager
+        tests/CalendarManager/test_CalendarManager.cpp
+        CalendarManager/CalendarManager.cpp  # Add this file
+)
+target_link_libraries(test_CalendarManager PRIVATE Catch2::Catch2WithMain)
+
 add_executable(calendar main.cpp
         calendar/calendar.cpp
         calendar/calendar.h
@@ -21,5 +28,6 @@ add_executable(calendar main.cpp
         Resource/Resource.h
         User/User.cpp
         User/User.h
+
 
 )
