@@ -55,3 +55,25 @@ TEST_CASE("Event Delete Test") {
     cm.deleteEvent(e, cm.calendars[0]);
     REQUIRE(cm.calendars[0].events.empty());
 }
+
+TEST_CASE("Event Test start and end Times same") {
+    CalendarManager cm;
+    Calendar c = cm.newCalendar();
+    Resource r = cm.newResource();
+    auto now = std::chrono::system_clock::now();
+    REQUIRE_THROWS_AS(cm.newEvent(now, now, c, r), std::runtime_error);
+}
+
+
+TEST_CASE("Event Test Conflicting Times") {
+    CalendarManager cm;
+    Calendar c = cm.newCalendar();
+    Resource r = cm.newResource();
+    auto now = std::chrono::system_clock::now();
+    auto later = now + std::chrono::seconds(1);
+    Event e = cm.newEvent(now, later, cm.calendars[0], r);
+    Event e2 = cm.newEvent(now, later, cm.calendars[0], r);
+
+    // REQUIRE_THROWS_AS(cm.newEvent(now, later, c, r), std::runtime_error);
+
+}

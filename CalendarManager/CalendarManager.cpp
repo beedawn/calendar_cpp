@@ -4,6 +4,7 @@
 
 #include "CalendarManager.h"
 #include <ostream>
+#include <iostream>
 #include <vector>
 
 std::vector<Calendar> CalendarManager::readCalendars() {
@@ -61,10 +62,14 @@ bool CalendarManager::eventOverlap(TimePoint start, TimePoint end, TimePoint sta
 }
 
 bool CalendarManager::conflictCheck(TimePoint start, TimePoint end, Resource r) {
-    int count =0;
+    int count = 0;
     for (auto & calendar : calendars) {
+       std::cout<<"Calendar \n"<<calendar.id;
+        std::cout<<calendars.size();
         for (auto & event : calendar.events) {
-            for (auto & resource : event.resources) {
+            std::cout<<"event: "<<event.id;
+            for (auto & resource : this->resources) {
+
                 if (resource.id == r.id&& eventOverlap(start, end, event.start_time, event.end_time)) {
                     ++count;
                 }
@@ -73,6 +78,7 @@ bool CalendarManager::conflictCheck(TimePoint start, TimePoint end, Resource r) 
                     // throw std::runtime_error("Times are conflicting!");
                     return false;
                 }
+                std::cout<<count<<"\n";
             }
         }
   }
@@ -93,6 +99,7 @@ Event CalendarManager::newEvent(TimePoint start, TimePoint end, Calendar& c, Res
     if (!validateTimes(start, end)) {
         throw std::runtime_error("end time is before start time");
     }
+
     if (!conflictCheck(start, end, r)) {
         throw std::runtime_error("conflicting event");
     }

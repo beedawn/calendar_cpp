@@ -30,9 +30,12 @@ void calendarTests() {
     auto later = now + std::chrono::seconds(1);
 
     cm.newEvent(now, later, c, r);
-    for (const auto& calendar : cm.readCalendars()) {
-        cout << calendar.id << "\n";
+    cm.newEvent(now, later, c, r);
+    for (auto event : cm.calendars[0].events) {
+        cout<<event.id<<" ";
     }
+
+    cout<<"etsts";
 }
 
 
