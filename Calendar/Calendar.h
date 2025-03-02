@@ -15,6 +15,4 @@ public:
     int concurrent_events = 0;
 };
 
-
-
 #endif //CALENDAR_H

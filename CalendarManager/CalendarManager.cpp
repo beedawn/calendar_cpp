@@ -3,11 +3,8 @@
 //
 
 #include "CalendarManager.h"
-
-#include <iostream>
 #include <ostream>
 #include <vector>
-
 
 std::vector<Calendar> CalendarManager::readCalendars() {
     return this->calendars;
@@ -36,7 +33,6 @@ Calendar CalendarManager::deleteCalendar(const Calendar& c) {
     calendars.erase(calendars.begin() + num);}
     return deletedCal;
 }
-
 
 Resource CalendarManager::newResource() {
     Resource r;
@@ -93,8 +89,6 @@ bool CalendarManager::validateTimes(TimePoint start, TimePoint end) {
     return true;
 }
 
-
-
 Event CalendarManager::newEvent(TimePoint start, TimePoint end, Calendar& c, Resource r) {
     if (!validateTimes(start, end)) {
         throw std::runtime_error("end time is before start time");
@@ -102,7 +96,6 @@ Event CalendarManager::newEvent(TimePoint start, TimePoint end, Calendar& c, Res
     if (!conflictCheck(start, end, r)) {
         throw std::runtime_error("conflicting event");
     }
-
     auto new_event =  Event();
     c.events.push_back(new_event);
     return new_event;

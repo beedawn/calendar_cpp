@@ -7,14 +7,11 @@
 
 #include <string>
 
-
 class Resource {
 public:
     int id =0;
     std::string name;
     std::string category;
 };
-
-
 
 #endif //RESOURCE_H

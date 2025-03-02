@@ -8,9 +8,6 @@
 #include <vector>
 #include "../Resource/Resource.h"
 
-
-
-
 class Event {
 public:
     int id = 0;
@@ -35,6 +32,5 @@ public:
 
 
 };
-
 
 #endif //EVENT_H

@@ -14,6 +14,4 @@ public:
     std::string display_name;
 };
 
-
-
 #endif //USER_H

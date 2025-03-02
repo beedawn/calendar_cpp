@@ -2,18 +2,12 @@
 // Created by Bee Schmersal on 3/1/25.
 //
 
-
 #include <catch2/catch_all.hpp>
 #include "../../CalendarManager/CalendarManager.h"
 #include "../../Calendar/Calendar.h"
 #include "../../Event/Event.h"
 #include "../../Resource/Resource.h"
-
 #include <iostream>
-// TEST_CASE("Example test2") {
-//     REQUIRE(1 + 1 == 2);
-// }
-
 
 TEST_CASE("Calendar Test") {
     CalendarManager cm;
@@ -27,9 +21,6 @@ TEST_CASE("Calendar Delete Test") {
     cm.deleteCalendar(c);
     REQUIRE(cm.calendars.empty());
 }
-
-
-
 
 TEST_CASE("Resource Test") {
     CalendarManager cm;
