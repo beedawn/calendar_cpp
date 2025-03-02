@@ -58,27 +58,21 @@ Resource CalendarManager::deleteResource(Resource r) {
 }
 using TimePoint = std::chrono::time_point<std::chrono::system_clock>;
 bool CalendarManager::eventOverlap(TimePoint start, TimePoint end, TimePoint start2, TimePoint end2) {
-        return (start < end2) && (end < start2);
+        return (start < end2) && (end > start2);
 }
 
 bool CalendarManager::conflictCheck(TimePoint start, TimePoint end, Resource r) {
     int count = 0;
     for (auto & calendar : calendars) {
-       std::cout<<"Calendar \n"<<calendar.id;
-        std::cout<<calendars.size();
         for (auto & event : calendar.events) {
-            std::cout<<"event: "<<event.id;
             for (auto & resource : this->resources) {
-
+                bool item = resource.id == r.id;
                 if (resource.id == r.id&& eventOverlap(start, end, event.start_time, event.end_time)) {
                     ++count;
                 }
                 if (count > calendar.concurrent_events) {
-                    // Probably can just return false?
-                    // throw std::runtime_error("Times are conflicting!");
                     return false;
                 }
-                std::cout<<count<<"\n";
             }
         }
   }

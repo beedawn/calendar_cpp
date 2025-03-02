@@ -35,6 +35,8 @@ TEST_CASE("Resource Delete Test") {
     REQUIRE(cm.resources.empty());
 }
 
+//test delete resource where it isn't there
+
 TEST_CASE("Event Test") {
     CalendarManager cm;
     Calendar c = cm.newCalendar();
@@ -56,11 +58,21 @@ TEST_CASE("Event Delete Test") {
     REQUIRE(cm.calendars[0].events.empty());
 }
 
-TEST_CASE("Event Test start and end Times same") {
+TEST_CASE("Event Test start after end Time same") {
     CalendarManager cm;
     Calendar c = cm.newCalendar();
     Resource r = cm.newResource();
     auto now = std::chrono::system_clock::now();
+    auto later = now + std::chrono::seconds(1);
+    REQUIRE_THROWS_AS(cm.newEvent(later, now, c, r), std::runtime_error);
+}
+
+TEST_CASE("Event Test start equal end Time same") {
+    CalendarManager cm;
+    Calendar c = cm.newCalendar();
+    Resource r = cm.newResource();
+    auto now = std::chrono::system_clock::now();
+
     REQUIRE_THROWS_AS(cm.newEvent(now, now, c, r), std::runtime_error);
 }
 
@@ -72,8 +84,11 @@ TEST_CASE("Event Test Conflicting Times") {
     auto now = std::chrono::system_clock::now();
     auto later = now + std::chrono::seconds(1);
     Event e = cm.newEvent(now, later, cm.calendars[0], r);
-    Event e2 = cm.newEvent(now, later, cm.calendars[0], r);
 
-    // REQUIRE_THROWS_AS(cm.newEvent(now, later, c, r), std::runtime_error);
+    REQUIRE_THROWS_AS(cm.newEvent(later, now, c, r), std::runtime_error);
 
 }
+
+//test event not there
+
+//test delete event when events are empty
