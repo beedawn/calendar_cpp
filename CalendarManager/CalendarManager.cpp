@@ -132,7 +132,8 @@ Event CalendarManager::deleteEvent(Event e, Calendar& c) {
     }
     if (num != -1) {
         throw std::out_of_range("resource not found");
+
     }
     c.events.erase(c.events.begin() + c.events[num].id);
-
+    return c.events[num];
 }

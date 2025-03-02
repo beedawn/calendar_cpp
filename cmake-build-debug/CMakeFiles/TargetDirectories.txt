@@ -1,3 +1,4 @@
+/Users/beeschmersal/CLionProjects/calendar_cpp/cmake-build-debug/CMakeFiles/tests.dir
 /Users/beeschmersal/CLionProjects/calendar_cpp/cmake-build-debug/CMakeFiles/calendar.dir
 /Users/beeschmersal/CLionProjects/calendar_cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/beeschmersal/CLionProjects/calendar_cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir

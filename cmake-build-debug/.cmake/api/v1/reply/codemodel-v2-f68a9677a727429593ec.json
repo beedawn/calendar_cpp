@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "calendar",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -39,8 +41,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "calendar::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-calendar-Debug-55f55b2e54a2ff088cbd.json",
+					"jsonFile" : "target-calendar-Debug-a8a702d0e184f02e126f.json",
 					"name" : "calendar",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tests::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tests-Debug-0b24ef3ad99b31e1152b.json",
+					"name" : "tests",
 					"projectIndex" : 0
 				}
 			]

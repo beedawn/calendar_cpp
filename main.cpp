@@ -31,7 +31,6 @@ void calendarTests() {
 
     cm.newEvent(now, later, c, r);
     for (const auto& calendar : cm.readCalendars()) {
-
         cout << calendar.id << "\n";
     }
 }
