@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: calendar
+# Project: src/Calendar
 # Configurations: Debug
 # =============================================================================
 
@@ -89,12 +89,12 @@ build CMakeFiles/test_CalendarManager.dir/tests/CalendarManager/test_CalendarMan
   OBJECT_DIR = CMakeFiles/test_CalendarManager.dir
   OBJECT_FILE_DIR = CMakeFiles/test_CalendarManager.dir/tests/CalendarManager
 
-build CMakeFiles/test_CalendarManager.dir/CalendarManager/CalendarManager.cpp.o: CXX_COMPILER__test_CalendarManager_unscanned_Debug /Users/beeschmersal/CLionProjects/calendar_cpp/CalendarManager/CalendarManager.cpp || cmake_object_order_depends_target_test_CalendarManager
-  DEP_FILE = CMakeFiles/test_CalendarManager.dir/CalendarManager/CalendarManager.cpp.o.d
+build CMakeFiles/test_CalendarManager.dir/src/CalendarManager/CalendarManager.cpp.o: CXX_COMPILER__test_CalendarManager_unscanned_Debug /Users/beeschmersal/CLionProjects/calendar_cpp/src/CalendarManager/CalendarManager.cpp || cmake_object_order_depends_target_test_CalendarManager
+  DEP_FILE = CMakeFiles/test_CalendarManager.dir/src/CalendarManager/CalendarManager.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   INCLUDES = -I/opt/homebrew/Cellar/catch2/3.8.0/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/test_CalendarManager.dir
-  OBJECT_FILE_DIR = CMakeFiles/test_CalendarManager.dir/CalendarManager
+  OBJECT_FILE_DIR = CMakeFiles/test_CalendarManager.dir/src/CalendarManager
 
 
 # =============================================================================
@@ -104,7 +104,7 @@ build CMakeFiles/test_CalendarManager.dir/CalendarManager/CalendarManager.cpp.o:
 #############################################
 # Link the executable test_CalendarManager
 
-build test_CalendarManager: CXX_EXECUTABLE_LINKER__test_CalendarManager_Debug CMakeFiles/test_CalendarManager.dir/tests/CalendarManager/test_CalendarManager.cpp.o CMakeFiles/test_CalendarManager.dir/CalendarManager/CalendarManager.cpp.o | /opt/homebrew/lib/libCatch2Main.a /opt/homebrew/lib/libCatch2.a
+build test_CalendarManager: CXX_EXECUTABLE_LINKER__test_CalendarManager_Debug CMakeFiles/test_CalendarManager.dir/tests/CalendarManager/test_CalendarManager.cpp.o CMakeFiles/test_CalendarManager.dir/src/CalendarManager/CalendarManager.cpp.o | /opt/homebrew/lib/libCatch2Main.a /opt/homebrew/lib/libCatch2.a
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk
   LINK_LIBRARIES = /opt/homebrew/lib/libCatch2Main.a  /opt/homebrew/lib/libCatch2.a
   OBJECT_DIR = CMakeFiles/test_CalendarManager.dir
@@ -122,40 +122,40 @@ build test_CalendarManager: CXX_EXECUTABLE_LINKER__test_CalendarManager_Debug CM
 
 build cmake_object_order_depends_target_calendar: phony || .
 
-build CMakeFiles/calendar.dir/main.cpp.o: CXX_COMPILER__calendar_unscanned_Debug /Users/beeschmersal/CLionProjects/calendar_cpp/main.cpp || cmake_object_order_depends_target_calendar
-  DEP_FILE = CMakeFiles/calendar.dir/main.cpp.o.d
+build CMakeFiles/calendar.dir/src/main.cpp.o: CXX_COMPILER__calendar_unscanned_Debug /Users/beeschmersal/CLionProjects/calendar_cpp/src/main.cpp || cmake_object_order_depends_target_calendar
+  DEP_FILE = CMakeFiles/calendar.dir/src/main.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   INCLUDES = -I/opt/homebrew/Cellar/catch2/3.8.0/include
   OBJECT_DIR = CMakeFiles/calendar.dir
-  OBJECT_FILE_DIR = CMakeFiles/calendar.dir
+  OBJECT_FILE_DIR = CMakeFiles/calendar.dir/src
 
-build CMakeFiles/calendar.dir/calendar/calendar.cpp.o: CXX_COMPILER__calendar_unscanned_Debug /Users/beeschmersal/CLionProjects/calendar_cpp/calendar/calendar.cpp || cmake_object_order_depends_target_calendar
-  DEP_FILE = CMakeFiles/calendar.dir/calendar/calendar.cpp.o.d
+build CMakeFiles/calendar.dir/src/Calendar/calendar.cpp.o: CXX_COMPILER__calendar_unscanned_Debug /Users/beeschmersal/CLionProjects/calendar_cpp/src/Calendar/calendar.cpp || cmake_object_order_depends_target_calendar
+  DEP_FILE = CMakeFiles/calendar.dir/src/Calendar/calendar.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   INCLUDES = -I/opt/homebrew/Cellar/catch2/3.8.0/include
   OBJECT_DIR = CMakeFiles/calendar.dir
-  OBJECT_FILE_DIR = CMakeFiles/calendar.dir/calendar
+  OBJECT_FILE_DIR = CMakeFiles/calendar.dir/src/Calendar
 
-build CMakeFiles/calendar.dir/CalendarManager/CalendarManager.cpp.o: CXX_COMPILER__calendar_unscanned_Debug /Users/beeschmersal/CLionProjects/calendar_cpp/CalendarManager/CalendarManager.cpp || cmake_object_order_depends_target_calendar
-  DEP_FILE = CMakeFiles/calendar.dir/CalendarManager/CalendarManager.cpp.o.d
+build CMakeFiles/calendar.dir/src/CalendarManager/CalendarManager.cpp.o: CXX_COMPILER__calendar_unscanned_Debug /Users/beeschmersal/CLionProjects/calendar_cpp/src/CalendarManager/CalendarManager.cpp || cmake_object_order_depends_target_calendar
+  DEP_FILE = CMakeFiles/calendar.dir/src/CalendarManager/CalendarManager.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   INCLUDES = -I/opt/homebrew/Cellar/catch2/3.8.0/include
   OBJECT_DIR = CMakeFiles/calendar.dir
-  OBJECT_FILE_DIR = CMakeFiles/calendar.dir/CalendarManager
+  OBJECT_FILE_DIR = CMakeFiles/calendar.dir/src/CalendarManager
 
-build CMakeFiles/calendar.dir/Event/Event.cpp.o: CXX_COMPILER__calendar_unscanned_Debug /Users/beeschmersal/CLionProjects/calendar_cpp/Event/Event.cpp || cmake_object_order_depends_target_calendar
-  DEP_FILE = CMakeFiles/calendar.dir/Event/Event.cpp.o.d
+build CMakeFiles/calendar.dir/src/Event/Event.cpp.o: CXX_COMPILER__calendar_unscanned_Debug /Users/beeschmersal/CLionProjects/calendar_cpp/src/Event/Event.cpp || cmake_object_order_depends_target_calendar
+  DEP_FILE = CMakeFiles/calendar.dir/src/Event/Event.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   INCLUDES = -I/opt/homebrew/Cellar/catch2/3.8.0/include
   OBJECT_DIR = CMakeFiles/calendar.dir
-  OBJECT_FILE_DIR = CMakeFiles/calendar.dir/Event
+  OBJECT_FILE_DIR = CMakeFiles/calendar.dir/src/Event
 
-build CMakeFiles/calendar.dir/Resource/Resource.cpp.o: CXX_COMPILER__calendar_unscanned_Debug /Users/beeschmersal/CLionProjects/calendar_cpp/Resource/Resource.cpp || cmake_object_order_depends_target_calendar
-  DEP_FILE = CMakeFiles/calendar.dir/Resource/Resource.cpp.o.d
+build CMakeFiles/calendar.dir/src/Resource/Resource.cpp.o: CXX_COMPILER__calendar_unscanned_Debug /Users/beeschmersal/CLionProjects/calendar_cpp/src/Resource/Resource.cpp || cmake_object_order_depends_target_calendar
+  DEP_FILE = CMakeFiles/calendar.dir/src/Resource/Resource.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   INCLUDES = -I/opt/homebrew/Cellar/catch2/3.8.0/include
   OBJECT_DIR = CMakeFiles/calendar.dir
-  OBJECT_FILE_DIR = CMakeFiles/calendar.dir/Resource
+  OBJECT_FILE_DIR = CMakeFiles/calendar.dir/src/Resource
 
 build CMakeFiles/calendar.dir/User/User.cpp.o: CXX_COMPILER__calendar_unscanned_Debug /Users/beeschmersal/CLionProjects/calendar_cpp/User/User.cpp || cmake_object_order_depends_target_calendar
   DEP_FILE = CMakeFiles/calendar.dir/User/User.cpp.o.d
@@ -172,7 +172,7 @@ build CMakeFiles/calendar.dir/User/User.cpp.o: CXX_COMPILER__calendar_unscanned_
 #############################################
 # Link the executable calendar
 
-build calendar: CXX_EXECUTABLE_LINKER__calendar_Debug CMakeFiles/calendar.dir/main.cpp.o CMakeFiles/calendar.dir/calendar/calendar.cpp.o CMakeFiles/calendar.dir/CalendarManager/CalendarManager.cpp.o CMakeFiles/calendar.dir/Event/Event.cpp.o CMakeFiles/calendar.dir/Resource/Resource.cpp.o CMakeFiles/calendar.dir/User/User.cpp.o
+build calendar: CXX_EXECUTABLE_LINKER__calendar_Debug CMakeFiles/calendar.dir/src/main.cpp.o CMakeFiles/calendar.dir/src/Calendar/calendar.cpp.o CMakeFiles/calendar.dir/src/CalendarManager/CalendarManager.cpp.o CMakeFiles/calendar.dir/src/Event/Event.cpp.o CMakeFiles/calendar.dir/src/Resource/Resource.cpp.o CMakeFiles/calendar.dir/User/User.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk
   OBJECT_DIR = CMakeFiles/calendar.dir
   POST_BUILD = :

@@ -3,10 +3,10 @@
 //
 
 #include <catch2/catch_all.hpp>
-#include "../../CalendarManager/CalendarManager.h"
-#include "../../Calendar/Calendar.h"
-#include "../../Event/Event.h"
-#include "../../Resource/Resource.h"
+#include "../../src/CalendarManager/CalendarManager.h"
+#include "../../src/Calendar/Calendar.h"
+#include "../../src/Event/Event.h"
+#include "../../src/Resource/Resource.h"
 #include <iostream>
 
 TEST_CASE("Calendar Test") {

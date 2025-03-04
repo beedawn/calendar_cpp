@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.30)
-project(calendar)
+project(src/Calendar)
 
 set(CMAKE_CXX_STANDARD 20)
 
@@ -13,19 +13,19 @@ target_link_libraries(tests PRIVATE Catch2::Catch2WithMain)
 
 add_executable(test_CalendarManager
         tests/CalendarManager/test_CalendarManager.cpp
-        CalendarManager/CalendarManager.cpp  # Add this file
+        src/CalendarManager/CalendarManager.cpp  # Add this file
 )
 target_link_libraries(test_CalendarManager PRIVATE Catch2::Catch2WithMain)
 
-add_executable(calendar main.cpp
-        calendar/calendar.cpp
-        calendar/calendar.h
-        CalendarManager/CalendarManager.cpp
-        CalendarManager/CalendarManager.h
-        Event/Event.cpp
-        Event/Event.h
-        Resource/Resource.cpp
-        Resource/Resource.h
+add_executable(calendar src/main.cpp
+        src/Calendar/calendar.cpp
+        src/Calendar/calendar.h
+        src/CalendarManager/CalendarManager.cpp
+        src/CalendarManager/CalendarManager.h
+        src/Event/Event.cpp
+        src/Event/Event.h
+        src/Resource/Resource.cpp
+        src/Resource/Resource.h
         User/User.cpp
         User/User.h
 

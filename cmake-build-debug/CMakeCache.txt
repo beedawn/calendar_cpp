@@ -146,7 +146,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=calendar
+CMAKE_PROJECT_NAME:STATIC=src/Calendar
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/ranlib
@@ -224,6 +224,15 @@ calendar_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 calendar_SOURCE_DIR:STATIC=/Users/beeschmersal/CLionProjects/calendar_cpp
+
+//Value Computed by CMake
+src/Calendar_BINARY_DIR:STATIC=/Users/beeschmersal/CLionProjects/calendar_cpp/cmake-build-debug
+
+//Value Computed by CMake
+src/Calendar_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+src/Calendar_SOURCE_DIR:STATIC=/Users/beeschmersal/CLionProjects/calendar_cpp
 
 
 ########################
